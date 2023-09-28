@@ -1,0 +1,220 @@
+{
+    "products":[
+        {
+            "id":1,
+            "title":"Bolt",
+            "descrpition":"The Bolt running shoe by ZenPath combines style and performance. With a sleek design and responsive cushioning, it's perfect for your daily runs.",
+            "price":100,
+            "stock":200,
+            "brand":"ZenPath",
+            "image":"/images/Shoe1.png"
+        },
+        {
+            "id":2,
+            "title":"Echo",
+            "descrpition":"Experience the lightweight comfort and durability of the Echo shoe from AeroGlide. Whether you're hitting the gym or the streets, Echo has got you covered",
+            "price":84,
+            "stock":250,
+            "brand":"AeroGlide",
+            "image":"/images/Shoe2.png"
+        },
+        {
+            "id":3,
+            "title":"Zenith",
+            "descrpition":"The Zenith, brought to you by ZenPath, offers excellent support and comfort at an affordable price. Perfect for your active lifestyle",
+            "price":59,
+            "stock":300,
+            "brand":"ZenPath",
+            "image":"/images/Shoe3.png"
+        },
+        {
+            "id":4,
+            "title":"Nova",
+            "descrpition":"AeroGlide's Nova is a high-performance running shoe built for speed and endurance. Get ready to conquer your fitness goals with Nova on your feet",
+            "price":139,
+            "stock":150,
+            "brand":"AeroGlide",
+            "image":"/images/Shoe4.png"
+        },
+        {
+            "id":5,
+            "title":"Zephyr",
+            "descrpition":"SwiftSole's Zephyr is the go-to choice for those seeking style and comfort. Its versatile design makes it suitable for various activities",
+            "price":64,
+            "stock":250,
+            "brand":"SwiftSole",
+            "image":"/images/Shoe5.png"
+        },
+        {
+            "id":6,
+            "title":"Racer",
+            "descrpition":"UrbanEdge's Racer is a sleek and urban-inspired shoe designed for the modern athlete. Elevate your streetwear game with Racer",
+            "price":119,
+            "stock":180,
+            "brand":"UrbanEdge",
+            "image":"/images/Shoe6.png"
+        },
+        {
+            "id":7,
+            "title":"Swift",
+            "descrpition":"ZenPath's Swift is the pinnacle of running shoe technology. It offers unmatched support, cushioning, and style for dedicated runners",
+            "price":149,
+            "stock":140,
+            "brand":"ZenPath",
+            "image":"/images/Shoe7.png"
+        },
+        {
+            "id":8,
+            "title":"Flux",
+            "descrpition":"Flux by ZenPath is a versatile shoe that transitions effortlessly from the gym to casual outings. Enjoy comfort and style in every step",
+            "price":109,
+            "stock":200,
+            "brand":"ZenPath",
+            "image":"/images/Shoe8.png"
+        },
+        {
+            "id":9,
+            "title":"Edge",
+            "descrpition":"SwiftSole's Edge is all about pushing boundaries. This performance shoe is designed to help you break your personal bests",
+            "price":149,
+            "stock":140,
+            "brand":"SwiftSole",
+            "image":"/images/Shoe9.png"
+        },
+        {
+            "id":10,
+            "title":"Pacer",
+            "descrpition":"SwiftSole's Pacer is the perfect blend of style and function. Whether you're jogging or just strolling, Pacer keeps you on the move",
+            "price":109,
+            "stock":200,
+            "brand":"SwiftSole",
+            "image":"/images/Shoe10.png"
+        },
+        {
+            "id":11,
+            "title":"Blaze",
+            "descrpition":"Step into action with SwiftSole's Blaze shoe. It's a budget-friendly choice for active individuals, providing comfort and reliability",
+            "price":44,
+            "stock":350,
+            "brand":"SwiftSole",
+            "image":"/images/Shoe11.png"
+        },
+        {
+            "id":12,
+            "title":"Quest",
+            "descrpition":"Embark on your fitness journey with SwiftSole's Quest. This premium shoe offers top-notch performance and support for serious athletes",
+            "price":169,
+            "stock":120,
+            "brand":"SwiftSole",
+            "image":"/images/Shoe12.png"
+        },
+        {
+            "id":13,
+            "title":"Aero",
+            "descrpition":"UrbanEdge's Aero is a statement shoe with an edgy design. Ideal for those who want to stand out while staying active",
+            "price":139,
+            "stock":150,
+            "brand":"UrbanEdge",
+            "image":"/images/Shoe13.png"
+        },
+        {
+            "id":14,
+            "title":"Dash",
+            "descrpition":"UrbanEdge's Dash shoe is your everyday companion for comfort and style. It's perfect for running errands or casual outings.",
+            "price":79,
+            "stock":220,
+            "brand":"UrbanEdge",
+            "image":"/images/Shoe14.png"
+        },
+        {
+            "id":15,
+            "title":"Tide",
+            "descrpition":"Experience the smooth ride of AeroGlide's Tide shoe. With superior cushioning, it's perfect for long runs and endurance training",
+            "price":159,
+            "stock":130,
+            "brand":"AeroGlide",
+            "image":"/images/Shoe15.png"
+        },
+        {
+            "id":16,
+            "title":"Surge",
+            "descrpition":"AeroGlide's Surge offers agility and support at an affordable price. It's a versatile choice for various sports and activities",
+            "price":54,
+            "stock":250,
+            "brand":"AeroGlide",
+            "image":"/images/Shoe16.png"
+        },
+        {
+            "id":17,
+            "title":"Verve",
+            "descrpition":"ZenPath's Verve shoe combines elegance and performance. Elevate your fitness routine with Verve's premium features",
+            "price":159,
+            "stock":130,
+            "brand":"ZenPath",
+            "image":"/images/Shoe17.png"
+        },
+        {
+            "id":18,
+            "title":"Glide",
+            "descrpition":"SwiftSole's Glide shoe is designed for those who crave comfort and durability. Glide through your day with ease",
+            "price":69,
+            "stock":240,
+            "brand":"SwiftSole",
+            "image":"/images/Shoe18.png"
+        },
+        {
+            "id":19,
+            "title":"Sprint",
+            "descrpition":"AeroGlide's Sprint shoe is all about speed and agility. It's a lightweight option for sprinters and fast-paced workouts",
+            "price":49,
+            "stock":280,
+            "brand":"AeroGlide",
+            "image":"/images/Shoe19.png"
+        },
+        {
+            "id":20,
+            "title":"Solace",
+            "descrpition":"Find comfort in every step with UrbanEdge's Solace shoe. It's the perfect choice for those seeking relaxation and style",
+            "price":39,
+            "stock":320,
+            "brand":"UrbanEdge",
+            "image":"/images/Shoe20.png"
+        },
+        {
+            "id":21,
+            "title":"Zen",
+            "descrpition":"UrbanEdge's Zen shoe combines urban aesthetics with athletic performance. Conquer the streets in style with Zen on your feet",
+            "price":129,
+            "stock":160,
+            "brand":"UrbanEdge",
+            "image":"/images/Shoe21.png"
+        },
+        {
+            "id":22,
+            "title":"Rise",
+            "descrpition":"AeroGlide's Rise offers a rise in performance with its advanced features. It's designed for athletes aiming for the top",
+            "price":74,
+            "stock":220,
+            "brand":"AeroGlide",
+            "image":"/images/Shoe22.png"
+        },
+        {
+            "id":23,
+            "title":"Tempo",
+            "descrpition":"UrbanEdge's Tempo shoe is all about keeping up with your active lifestyle. Stay in rhythm with Tempo's comfort and support",
+            "price":94,
+            "stock":180,
+            "brand":"UrbanEdge",
+            "image":"/images/Shoe23.png"
+        },
+        {
+            "id":24,
+            "title":"Orbit",
+            "descrpition":"Experience out-of-this-world comfort with ZenPath's Orbit shoe. It's perfect for those who want to reach new heights in style.",
+            "price":100,
+            "stock":200,
+            "brand":"ZenPath",
+            "image":"/images/Shoe24.png"
+        }
+    ]     
+}
