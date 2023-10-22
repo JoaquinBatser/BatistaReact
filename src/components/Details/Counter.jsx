@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { toast } from 'sonner'
+import CartContext from '../../context/CartContext/CartContext'
 
 const Counter = ( {onAdd} ) => {
     const [count, setCount] = useState(1)
+    const {cart} = useContext(CartContext)
 
     const increment = () => {
         setCount( count + 1 )
@@ -18,7 +21,7 @@ const Counter = ( {onAdd} ) => {
             <span className='bg-black px-2 py-1 rounded'> { count } </span>
             <button onClick={increment} className='bg-black rounded px-2 py-1 hover:bg-white hover:border-black hover:text-black transition-all'> + </button>
             <button onClick={decrement} className='bg-black rounded px-2 py-1 hover:bg-white hover:border-black hover:text-black transition-all'> - </button>
-            <button onClick={() => onAdd(count)} className='px-2 py-1 rounded bg-black w-full  hover:bg-white hover:border-black hover:text-black transition-all'>Add to cart</button>
+            <button onClick={() => {onAdd(count), toast(`${count} item/s added to your cart`)}} className='px-2 py-1 rounded bg-black w-full  hover:bg-white hover:border-black hover:text-black transition-all'>Add to cart</button>
 
         </div>
     )

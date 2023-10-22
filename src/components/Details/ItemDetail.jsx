@@ -9,7 +9,7 @@ const ItemDetail = ({ item, onAdd }) => {
   }
 
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center h-screen gap-8 p-20 text-center md:text-start'>
+    <div className='flex flex-col md:flex-row justify-center items-center text-[#fefefe] h-screen gap-8 p-20 text-center md:text-start'>
       <img className='w-96' src={item.image} alt="" />
       <div>
           <small className='italic opacity-40'>{ item.brand }</small>

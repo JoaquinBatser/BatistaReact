@@ -1,7 +1,5 @@
 import React from 'react'
-import Logo from '../../images/logo.png'
 import CartWidget from './CartWidget'
-import QMark from '../../images/about.svg'
 import { Link, NavLink, useParams } from 'react-router-dom'
 
 
@@ -10,13 +8,13 @@ const NavBar = () => {
   const brands = ['UrbanEdge', 'AeroGlide', 'SwiftSole', 'ZenPath'];
   
   return (
-    <nav className='fixed z-40 px-4 group flex items-center w-screen justify-between'>
-      <Link onClick={() => brandSwitch()} to='/'><img className='w-16 h-16 rotate-[20deg] hover:cursor-pointer' src={Logo} alt="Logo" /></Link>
-      <ul className='gap-1 ml-2 flex text-sm font-bold tracking-wider text-white'>
+    <nav className= ' fixed z-40 px-14 group flex items-center w-screen sm:justify-between sm:h-10 sm:flex-row  gap-1    h-20 flex-col py-4'>
+      <Link to='/' className=' font-bold tracking-widest text-[#fefefe]'>EVOKE</Link>
+      <ul className='gap-0 flex text-sm font-bold tracking-wider text-[#fefefe] divide-x-2'>
 
           {brands.map((brandName) => (
-            <NavLink onClick={() => brandSwitch()} key={brandName} to={`/brand/${brandName}`}>
-              <li className='hover:bg-black cursor-pointer bg-black/40 px-2 lg:px-6 py-1 rounded transition-all'>
+            <NavLink key={brandName} to={`/brand/${brandName}`}>
+              <li className='cursor-pointer px-2 lg:px-6 py-1 transition-all'>
                 {brandName}
               </li>
             </NavLink>
@@ -24,7 +22,6 @@ const NavBar = () => {
 
       </ul>
       <div className='flex items-center'>
-        <Link to='/about' ><img className='w-6' src={QMark} alt="About" /></Link>
         <CartWidget />
       </div>
       

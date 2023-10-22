@@ -9,6 +9,7 @@ const ItemListContainer = () => {
 
   const { brandName } = useParams() 
 
+  console.log(brandName)
   const [filteredItems, setFilteredItems] = useState([])
 
   useEffect(() => {
@@ -35,7 +36,7 @@ const ItemListContainer = () => {
 
  
   return (
-    <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6">
+    <ul className=" min-h-screen content-center grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 py-32 sm:py-10 px-14 ">
       {
        filteredItems.length > 0 &&
        <ItemList items={filteredItems}/>

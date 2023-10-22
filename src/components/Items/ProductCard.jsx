@@ -4,19 +4,24 @@ import { Link, useParams } from 'react-router-dom'
 const ProductCard = ({item}) => {
   
   return (
-    <li  className="border-[1px] border-[#868583] hover:relative hover:shadow-3xl hover:border-2 hover:border-white transition-all hover:cursor-pointer" key={item.id}>
-            
-    <img src={item.image} alt="" />
-    <div className="bg-white/80 px-4 py-1">
-      <div className="flex justify-between items-center" >
-        <small>{item.brand}</small>
-        <span className="prodName font-extrabold text-xl tracking-wide hover:text-red-400 transition-all"><Link to={`/detail/${item.id}`}>{item.title.toUpperCase()}</Link></span>
-        <small>${item.price}</small>
-               
-      </div>
+    <Link to={`/detail/${item.id}`}>
+      <li  className="transition-all hover:cursor-pointer hover:shadow-lg rounded text-[#fefefe] flex justify-center flex-col" key={item.id}>
+              
+      <img className='' src={item.image} alt="" />
+      <div className="p-2">
+        <div className="flex justify-between items-start" >
+          <div className='flex flex-col '>
+            <span className="prodName font-black text-2xl tracking-widest hover:text-blue-800 transition-all">{item.title.toUpperCase()}</span>
+            <small className='opacity-30 italic'>{item.brand}</small>
+          </div>
+          <small className=''>${item.price}</small>
+                
+        </div>
 
-    </div>
-  </li>
+      </div>
+    </li>
+    
+    </Link>
   )
 }
 
