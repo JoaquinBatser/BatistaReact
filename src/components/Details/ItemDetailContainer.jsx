@@ -1,33 +1,43 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ItemDetail from './ItemDetail'
-import productsData from '../../mocks/products.json'
+import CartContext from '../../context/CartContext/CartContext'
+import { doc, getDoc, getFirestore } from "firebase/firestore"
 
 const ItemDetailContainer = ({ id }) => {
 
-    const [ product, setProduct ] = useState(null)
+    const [ item, setItem ] = useState(null)
+    
+    const { addItem } = useContext(CartContext)
+
+    const brandSwitch = (brandName) => {
+      const brand = brandName
+    }
     
     useEffect(() => {
+      const db = getFirestore();
 
-        if (!productsData || !productsData.products) {
-            console.warn('No products data available yet.');
-            return;
-        }
+      const itemRef = doc(db, "items", id)
 
-        const numericId = parseInt(id, 10)
+      getDoc(itemRef)
+        .then( (snapshot) => {
+          if(snapshot.exists()) {
+            setItem({id: snapshot.id,...snapshot.data()})
+          }
+        })
+        
+        
 
-        const products = productsData.products
+    },[])
 
-        const selectedProduct = products.find((product) => product.id === numericId)
-    
-        setProduct(selectedProduct)
-    },[id])
+    const onAdd = (q) => {
+      addItem(item, q)
+    }
 
-
-  return (
-    <>
-        <ItemDetail product={ product }/>
-    </>
-  )
+    return (
+      <>
+          <ItemDetail item={ item } onAdd={onAdd}/>
+      </>
+    ) 
 }
 
 export default ItemDetailContainer

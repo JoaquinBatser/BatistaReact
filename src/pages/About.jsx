@@ -1,10 +1,13 @@
 import React from 'react'
-
+import { Toaster, toast } from 'sonner'
 const About = () => {
   return (
-    <div className='flex h-screen items-center justify-center'>
-      <h1 className='font-extrabold text-[10rem]'>ABOUT</h1>
-    </div>
+    <div className='pt-20'>
+    <Toaster />
+    <button onClick={() => toast('My first toast')}>
+      Give me a toast
+    </button>
+  </div>
   )
 }
 

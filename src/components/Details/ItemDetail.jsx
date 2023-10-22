@@ -1,24 +1,26 @@
 import React from 'react'
+import Counter from './Counter'
 
 
-const ItemDetail = ({  product }) => {
+const ItemDetail = ({ item, onAdd }) => {
 
-  if(!product) {
-    return <div>Loading ...</div>
+  if(!item) {
+    return <div className='flex w-screen h-screen justify-center items-center font-black text-6xl'>LOADING ...</div>
   }
 
   return (
     <div className='flex flex-col md:flex-row justify-center items-center h-screen gap-8 p-20 text-center md:text-start'>
-      <img className='w-96' src={product.image} alt="" />
+      <img className='w-96' src={item.image} alt="" />
       <div>
-          <small className='italic opacity-40'>{ product.brand }</small>
+          <small className='italic opacity-40'>{ item.brand }</small>
 
           <div className='flex items-center gap-4 mb-4 mt-2 justify-center md:justify-start'>
-          <h1 className='text-8xl font-extrabold'>{product.title}</h1>
-          <h2 className='text-sm'>{product.price}</h2>
+          <h1 className='text-8xl font-extrabold'>{item.title}</h1>
+          <h2 className='text-sm'>{item.price}</h2>
 
         </div>
-        <p>{product.descrpition}</p>
+        <p>{item.description}</p>
+        <Counter onAdd={ onAdd }/>
 
       </div>
 

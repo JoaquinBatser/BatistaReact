@@ -1,11 +1,13 @@
 import React from 'react'
-import { Products } from '../components/Items/ItemListContainer'
-import { products } from '../mocks/products.json'
+import { useParams } from 'react-router-dom'
+import ItemListContainer from '../components/Items/ItemListContainer'
+
 
 const Home = () => {
+  const params = useParams()
   return (
     <>
-      <Products products={products} />
+      <ItemListContainer items={params} />
     </>
   )
 }
