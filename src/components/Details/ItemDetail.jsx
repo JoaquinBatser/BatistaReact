@@ -5,7 +5,7 @@ import Counter from './Counter'
 const ItemDetail = ({ item, onAdd }) => {
 
   if(!item) {
-    return <div className='flex w-screen h-screen justify-center items-center font-black text-6xl'>LOADING ...</div>
+    return <div className='flex w-screen h-screen justify-center items-center font-black text-6xl text-white'>LOADING ...</div>
   }
 
   return (

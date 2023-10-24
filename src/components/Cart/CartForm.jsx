@@ -6,7 +6,7 @@ const CartForm = () => {
     // const { cart, removeItem, clear } = useContext(CartContext)
 
     const { cart } = useContext(CartContext)
-    console.log(cart)
+    
   return (
     <div>CartForm</div>
   )

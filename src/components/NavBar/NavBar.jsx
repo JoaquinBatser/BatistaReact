@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import CartWidget from './CartWidget'
 import { Link, NavLink, useParams } from 'react-router-dom'
+import CartContext from '../../context/CartContext/CartContext'
+import Counter from '../Details/Counter'
 
 
 const NavBar = () => {
   const { category } = useParams()
   const brands = ['UrbanEdge', 'AeroGlide', 'SwiftSole', 'ZenPath'];
+  const {cart} = useContext(CartContext)
+
+  // const total = cart.reduce((amount, item) => { return amount + item.quantity}, 0)
   
   return (
-    <nav className= ' fixed z-40 px-14 group flex items-center w-screen sm:justify-between sm:h-10 sm:flex-row  gap-1    h-20 flex-col py-4'>
+    <nav className= 'bg-black/40 fixed z-40 px-14 group flex items-center w-screen sm:justify-between sm:h-10 sm:flex-row  gap-1    h-32 flex-col py-4'>
       <Link to='/' className=' font-bold tracking-widest text-[#fefefe]'>EVOKE</Link>
       <ul className='gap-0 flex text-sm font-bold tracking-wider text-[#fefefe] divide-x-2'>
 
@@ -22,6 +27,8 @@ const NavBar = () => {
 
       </ul>
       <div className='flex items-center'>
+            {/* <span className='text-white'>{total}</span> */}
+        
         <CartWidget />
       </div>
       

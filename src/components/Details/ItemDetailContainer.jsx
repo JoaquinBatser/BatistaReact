@@ -32,9 +32,13 @@ const ItemDetailContainer = ({ id }) => {
     const onAdd = (q) => {
       addItem(item, q)
     }
+ 
 
     return (
+      
+      
       <>
+          
           <ItemDetail item={ item } onAdd={onAdd}/>
       </>
     ) 

@@ -9,7 +9,6 @@ const ItemListContainer = () => {
 
   const { brandName } = useParams() 
 
-  console.log(brandName)
   const [filteredItems, setFilteredItems] = useState([])
 
   useEffect(() => {

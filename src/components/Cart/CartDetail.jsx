@@ -17,6 +17,7 @@ const CartDetail = () => {
         navigate('/cartform')
     }
 
+   
     
     
     const addToCart = () => {
@@ -53,6 +54,7 @@ const CartDetail = () => {
             
 
     }
+    
 
 
     return (
@@ -66,9 +68,9 @@ const CartDetail = () => {
                             <small className='italic opacity-40'>{el.item.brand}</small>
 
                        </div>
-                        <small>Quantity: {el.quantity}</small>
+                        <small className='text-white'>Quantity: {el.quantity}</small>
                        
-                        <strong>${(el.item.price)*el.quantity}</strong>
+                        <strong></strong>
                         <button onClick={() => removeItem(el.item.id)}> <img className='w-6' src={deleteFromCart} alt="" /></button>
                     </div>
                 ))

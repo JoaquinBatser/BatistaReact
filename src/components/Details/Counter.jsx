@@ -15,7 +15,9 @@ const Counter = ( {onAdd} ) => {
             setCount( count - 1 )
         }
     }
+    
 
+    
     return (
         <div className='flex items-center justify-center text-white text-sm mt-4 gap-1 font-bold'>
             <span className='bg-black px-2 py-1 rounded'> { count } </span>

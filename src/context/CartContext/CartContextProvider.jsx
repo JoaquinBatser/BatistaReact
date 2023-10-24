@@ -1,19 +1,27 @@
 import React, { useState } from 'react'
 import CartContext from './CartContext'
+import ItemCounter from '../../components/Cart/ItemCounter'
 
 const CartContextProvider = ({ children }) => {
     
     const [cart, setCart] = useState([])
-    console.log(cart)
+    const [totalQ, setTotalQ] = useState(0)
+    
 
     const addItem = (item, q) => {
         const elPrev = isInCart(item.id)
+        
+        console.log(cart)
+       
 
+       
         if (elPrev) {
             const newCart = cart.map(el => {
                 if(el.id === elPrev.id) {
                     el.quantity = el.quantity + q;
+            
                     return el
+           
                         
                     
                 }
@@ -29,12 +37,16 @@ const CartContextProvider = ({ children }) => {
                 }
             ])
         }
+
+
         
     }
 
+
+  
+
     const isInCart = (id) => {
-        const element = cart.find((el) => el.item.id === id)
-        return element
+        return cart.find((el) => el.item.id === id)
     }
 
     const removeItem = (id) => {
