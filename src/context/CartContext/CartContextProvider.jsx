@@ -4,50 +4,46 @@ import ItemCounter from '../../components/Cart/ItemCounter'
 
 const CartContextProvider = ({ children }) => {
     
-    const [cart, setCart] = useState([])
-    const [totalQ, setTotalQ] = useState(0)
+    const [cart, setCart] = useState([])    
     
-
     const addItem = (item, q) => {
         const elPrev = isInCart(item.id)
-        
-        console.log(cart)
-       
 
-       
-        if (elPrev) {
-            const newCart = cart.map(el => {
-                if(el.id === elPrev.id) {
-                    el.quantity = el.quantity + q;
-            
+        console.log(cart)
+
+        if (elPrev){
+            const newCart = cart.map (el => {
+                
+                if (el.item.id === item.id) {
+                    el.quantity = el.quantity + q
                     return el
-           
-                        
-                    
                 }
                 return el
             })
             setCart(newCart)
         } else {
-
-            setCart([
+            setCart
+            ([
                 ...cart,
                 {
-                    item, quantity: q
+                    item,
+                    quantity: q
+
                 }
             ])
-        }
-
-
-        
+        }  
     }
-
-
-  
 
     const isInCart = (id) => {
-        return cart.find((el) => el.item.id === id)
+       return cart.find(el => el.item.id === id)
+        
     }
+  
+    const total = cart.reduce((acc, item) => {
+        return acc + item.quantity
+    }, 0);
+
+    
 
     const removeItem = (id) => {
         const newCart = cart.filter((el) => el.item.id !== id);
@@ -62,7 +58,8 @@ const CartContextProvider = ({ children }) => {
         cart,
         addItem,
         removeItem,
-        clear
+        clear,
+        total
     }
 
     return (

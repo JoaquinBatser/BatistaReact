@@ -4,7 +4,7 @@ import CartContext from '../../context/CartContext/CartContext'
 
 const Counter = ( {onAdd} ) => {
     const [count, setCount] = useState(1)
-    const {cart} = useContext(CartContext)
+
 
     const increment = () => {
         setCount( count + 1 )

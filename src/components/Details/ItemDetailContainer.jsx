@@ -9,10 +9,6 @@ const ItemDetailContainer = ({ id }) => {
     
     const { addItem } = useContext(CartContext)
 
-    const brandSwitch = (brandName) => {
-      const brand = brandName
-    }
-    
     useEffect(() => {
       const db = getFirestore();
 
