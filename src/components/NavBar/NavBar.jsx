@@ -7,14 +7,14 @@ import CartContext from '../../context/CartContext/CartContext'
 const NavBar = () => {
   const { category } = useParams()
   const brands = ['UrbanEdge', 'AeroGlide', 'SwiftSole', 'ZenPath'];
-  const {cart, total} = useContext(CartContext)
+  const {cart, totalItems} = useContext(CartContext)
 
   // const total = cart.reduce((amount, item) => { return amount + item.quantity}, 0)
   
   return (
     <nav className= 'bg-black/40 fixed z-40 px-14 group flex items-center w-screen sm:justify-between sm:h-10 sm:flex-row  gap-1    h-32 flex-col '>
-      <Link to='/' className=' font-bold tracking-widest text-[#fefefe]'>EVOKE</Link>
-      <ul className='gap-0 flex text-sm font-bold tracking-wider text-[#fefefe] divide-x-2'>
+      <Link to='/' className=' font-black tracking-widest text-[#fefefe]'>EVOKE</Link>
+      <ul className='gap-0 flex text-sm font-semibold tracking-wider text-[#fefefe] divide-x-2'>
 
           {brands.map((brandName) => (
             <NavLink key={brandName} to={`/brand/${brandName}`}>
@@ -27,7 +27,7 @@ const NavBar = () => {
       </ul>
       <div className='flex items-center'>
         
-        <CartWidget total={total}/>
+        <CartWidget total={totalItems}/>
       </div>
       
 

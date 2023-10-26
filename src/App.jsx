@@ -17,7 +17,7 @@ function App() {
   return (
     <div className='bg-black min-h-screen'>
       <CartContextProvider>
-        <Toaster richColors expand={true} className='toast'/>
+        <Toaster richColors className='toast'/>
         <NavBar />
         <Routes>
           <Route path='/' element={<Home />}/>

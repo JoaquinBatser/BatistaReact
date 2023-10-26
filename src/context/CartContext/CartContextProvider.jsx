@@ -39,10 +39,14 @@ const CartContextProvider = ({ children }) => {
         
     }
   
-    const total = cart.reduce((acc, item) => {
+    const totalItems = cart.reduce((acc, item) => {
         return acc + item.quantity
     }, 0);
 
+
+    const subTotal = cart.reduce((acc, item) => {
+        return acc + item.quantity * item.item.price;
+    }, 0);
     
 
     const removeItem = (id) => {
@@ -54,11 +58,21 @@ const CartContextProvider = ({ children }) => {
         setCart([])
     }
 
+    const tax = .20
+    
+    const deliveryFee = .10
+
+    const total = (subTotal + subTotal*deliveryFee + subTotal*tax).toFixed(2)
+
     const values = {
         cart,
         addItem,
         removeItem,
         clear,
+        subTotal,
+        tax,
+        deliveryFee,
+        totalItems,
         total
     }
 
