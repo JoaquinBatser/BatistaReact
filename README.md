@@ -1,8 +1,12 @@
-# React + Vite
+# SHOE E-COMERCE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## OVERVIEW
+This website was built with React, Tailwind CSS, Vite, and Sonner for alerts. You can:
+* Browse a diverse collection of shoes.
+* Access detailed shoe information.
+* Add shoes to the cart for easy shopping.
+* Receive real-time alerts using Sonner.
 
-Currently, two official plugins are available:
+## CONTACT
+For questions or inquiries, contact the maintainer at jbatistaservetti@gmail.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
