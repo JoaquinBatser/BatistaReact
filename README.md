@@ -1,4 +1,5 @@
 # SHOE E-COMERCE
+Deployed using Vercel: https://batista-react-krhu96k86-joaquinbatser.vercel.app/
 
 ## OVERVIEW
 This website was built with React, Tailwind CSS, Vite, and Sonner for alerts. You can:
